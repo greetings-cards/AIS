@@ -41,9 +41,9 @@ canvas {
 <body>
 
 
-<div><img src="http://www.sigmaksa.com/wp-content/uploads/2020/01/ais-logo-with-name.png" alt="" style="width: 400px;">
+<div><img src="ais-logo-with-name.png" style="width: 300px;">
 </div>
-<h2>Design your own Ramadan greeting. </h2>
+<h2>Create Your Official Eid Greeting</h2>
 
 <input type="text" id="name" placeholder="Name"><br>
 <input type="text" id="job" placeholder=" Job Title"><br>
@@ -59,7 +59,7 @@ const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
 const background = new Image();
-background.src = "https://i.pinimg.com/1200x/6b/c9/a2/6bc9a2f01566d267ea5ac67ad51d0173.jpg";
+background.src = "AIS.jpeg";
 
 background.onload = function () {
     draw();
@@ -95,7 +95,7 @@ function downloadImage() {
         link.href = canvas.toDataURL("image/png");
         link.click();
     } catch (err) {
-        alert("❌ لازم تشغل الموقع من سيرفر (Live Server)");
+        alert("❌ خطاء");
     }
 }
 </script>
